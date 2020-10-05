@@ -77,8 +77,9 @@ class MenuServiceTest {
                 .isInstanceOf(IllegalArgumentException.class);
     }
 
+    @DisplayName("메뉴 목록 조회 기능 테스트")
     @Test
-    void name() {
+    void list() {
         menuService.create(createMenuToSave("추천메뉴", "양념", 13000));
         menuService.create(createMenuToSave("추천메뉴", "후라이드", 12000));
 
